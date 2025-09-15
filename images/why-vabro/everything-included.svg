@@ -1,0 +1,13 @@
+<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1000010680">
+<circle id="Ellipse 2075" cx="12" cy="12.856" r="11.3638" stroke="#155DEC" stroke-width="1.2724"/>
+<circle id="Ellipse 2076" cx="9.20307" cy="16.0209" r="2.52878" stroke="#155DEC" stroke-width="1.2724"/>
+<path id="Polygon 120" d="M16.0153 10.2586C16.1623 10.0041 16.5296 10.0041 16.6765 10.2586L18.8915 14.0951C19.0385 14.3496 18.8548 14.6677 18.561 14.6677H14.1309C13.837 14.6677 13.6534 14.3496 13.8003 14.0951L16.0153 10.2586Z" stroke="#155DEC" stroke-width="1.2724"/>
+<g id="Rectangle 10711">
+<mask id="path-4-inside-1_5527_119351" fill="white">
+<rect x="7.51343" y="5.66223" width="5.50239" height="5.50239" rx="1.01792"/>
+</mask>
+<rect x="7.51343" y="5.66223" width="5.50239" height="5.50239" rx="1.01792" stroke="#155DEC" stroke-width="2.5448" mask="url(#path-4-inside-1_5527_119351)"/>
+</g>
+</g>
+</svg>

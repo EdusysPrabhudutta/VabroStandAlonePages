@@ -1,0 +1,17 @@
+<svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_773_8087" fill="white">
+<rect y="0.5" width="12.2581" height="6.17647" rx="1"/>
+</mask>
+<rect y="0.5" width="12.2581" height="6.17647" rx="1" stroke="#68696E" stroke-width="3" mask="url(#path-1-inside-1_773_8087)"/>
+<mask id="path-2-inside-2_773_8087" fill="white">
+<rect x="4.90332" y="7.91187" width="12.2581" height="6.17647" rx="1"/>
+</mask>
+<rect x="4.90332" y="7.91187" width="12.2581" height="6.17647" rx="1" stroke="#68696E" stroke-width="3" mask="url(#path-2-inside-2_773_8087)"/>
+<mask id="path-3-inside-3_773_8087" fill="white">
+<rect y="15.3235" width="12.2581" height="6.17647" rx="1"/>
+</mask>
+<rect y="15.3235" width="12.2581" height="6.17647" rx="1" stroke="#68696E" stroke-width="3" mask="url(#path-3-inside-3_773_8087)"/>
+<path d="M2.45166 17.7942H9.8065" stroke="#68696E" stroke-width="0.5" stroke-linecap="round"/>
+<path d="M2.45166 2.9707H9.8065" stroke="#68696E" stroke-linecap="round"/>
+<path d="M12.8711 17.9117C12.595 17.9117 12.3711 18.1355 12.3711 18.4117C12.3711 18.6878 12.595 18.9117 12.8711 18.9117V17.9117ZM19.0001 18.4117V18.9117H19.5001V18.4117H19.0001ZM19.0001 3.58813H19.5001V3.08813H19.0001V3.58813ZM12.8711 3.58813L17.8711 6.47489V0.701383L12.8711 3.58813ZM12.8711 18.9117H19.0001V17.9117H12.8711V18.9117ZM19.5001 18.4117V3.58813H18.5001V18.4117H19.5001ZM19.0001 3.08813H17.3711V4.08813H19.0001V3.08813Z" fill="#68696E"/>
+</svg>
