@@ -4209,6 +4209,7 @@ fieldset:disabled .btn {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  height: -webkit-fill-available;
 }
 .card > hr {
   margin-right: 0;
@@ -10063,6 +10064,11 @@ blockquote::before {
 .icon-box-item {
   z-index: 3;
 }
+
+.icon-box-item .rounded {
+  height: 100%;
+}
+
 .icon-box-item .block {
   padding: 35px 27px;
   box-shadow: 0px 25px 65px 0px rgba(0, 0, 0, 0.05);
