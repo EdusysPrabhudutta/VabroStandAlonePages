@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Visualize and Optimize Workflows with Vabro Kanban</title>
+    <meta
+      name="description"
+      content="Organize and track work seamlessly with Vabro Kanban visualize progress, manage tasks, optimize workflows, and boost overall efficiency."
+    />
+    <meta
+      name="keywords"
+      content="Kanban, Workflow Management, Task Tracking, Agile, Efficiency"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <meta name="author" content="Themefisher" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+
+    <!-- theme meta -->
+    <meta name="theme-name" content="wallet" />
+
+    <!-- # Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- # Main Style Sheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- navigation -->
+    <header b- class="navigation bg-tertiary">
+      <nav b- class="navbar navbar-expand-xl navbar-light py-3">
+        <div b- class="container">
+          <!-- Brand Logo -->
+          <a b- class="navbar-brand" href="#">
+            <img
+              b-
+              loading="lazy"
+              decoding="async"
+              class="img-fluid"
+              height="45"
+              src="./images/logo/logo_vabro_make_work_fun.svg"
+              alt="Vabro Logo"
+            />
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner bg-tertiary position-relative overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <div class="text-center text-lg-start pe-0 pe-xl-5">
+              <h5 class="text-uppercase text-primary mb-4">Frameworks</h5>
+
+              <h1 class="text-capitalize mb-4">
+                <span class="blue-gradient-text">Think Workflows, <br /></span>
+                Think Vabro
+              </h1>
+              <p>
+                Vabro streamlines Workflow with intuitive board visualization,
+                customizable work-in-progress limits, and powerful workflow
+                automation to optimize continuous delivery and process flow.
+              </p>
+
+              <div
+                class="d-flex gap-4 mt-4 align-items-center justify-content-center justify-content-lg-start flex-wrap"
+              >
+                <div>
+                  <a
+                    class="btn btn-primary rounded-pill"
+                    href="https://app.vabro.com/Home/join"
+                    target="_blank"
+                    >Try Vabro for Free</a
+                  >
+                </div>
+                <p class="mb-0">No Credit Card Required</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="ps-lg-5 text-center">
+              <img
+                loading="lazy"
+                decoding="async"
+                src="./images/framework/kanban-hero-image.webp"
+                alt="Kanban"
+                class="w-100"
+              />
+            </div>
+            <div class="product-blur"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="homepage_tab position-relative">
+      <div class="section container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 mb-4">
+            <div class="section-title text-center">
+              <h1>
+                Effortlessly Manage Work across all
+                <span class="blue-gradient-text">Frameworks</span>
+              </h1>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <ul
+              class="payment_info_tab nav nav-pills justify-content-center mb-4"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="workflow-tab"
+                  data-bs-toggle="pill"
+                  href="#workflow"
+                  role="tab"
+                  aria-controls="workflow"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/icons/workflow-icon.svg"
+                    alt="Workflow"
+                  />
+                  <span>Workflow</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="kanban-backlog-tab"
+                  data-bs-toggle="pill"
+                  href="#kanban-backlog"
+                  role="tab"
+                  aria-controls="kanban-backlog"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/kanban-backlog.svg"
+                    alt="Kanban Backlog"
+                  />
+                  <span>Kanban Backlog</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="task-groups-tab"
+                  data-bs-toggle="pill"
+                  href="#task-groups"
+                  role="tab"
+                  aria-controls="task-groups"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/task-group.svg"
+                    alt="Task Groups"
+                  />
+                  <span>Task Groups</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="task-tab"
+                  data-bs-toggle="pill"
+                  href="#task"
+                  role="tab"
+                  aria-controls="task"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/task.svg"
+                    alt="Task"
+                  />
+                  <span>Tasks</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="time-tracking-tab"
+                  data-bs-toggle="pill"
+                  href="#time-tracking"
+                  role="tab"
+                  aria-controls="time-tracking"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/time-tracking.svg"
+                    alt="Time Tracking"
+                  />
+                  <span>Time Tracking</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark active"
+                  id="watcher-tab"
+                  data-bs-toggle="pill"
+                  href="#watcher"
+                  role="tab"
+                  aria-controls="watcher"
+                  aria-selected="true"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/watcher.svg"
+                    alt="Watchers"
+                  />
+                  <span>Watchers</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="escalations-tab"
+                  data-bs-toggle="pill"
+                  href="#escalations"
+                  role="tab"
+                  aria-controls="escalations"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/escalation.svg"
+                    alt="Escalations"
+                  />
+                  <span>Escalations</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="forms-tab"
+                  data-bs-toggle="pill"
+                  href="#forms"
+                  role="tab"
+                  aria-controls="forms"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/planning-poker.svg"
+                    alt="Forms"
+                  />
+                  <span>Forms</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="wip-limits-tab"
+                  data-bs-toggle="pill"
+                  href="#wip-limits"
+                  role="tab"
+                  aria-controls="wip-limits"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/wip-limits.svg"
+                    alt="WIP Limits"
+                  />
+                  <span>WIP Limits</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="kanban-board-tab"
+                  data-bs-toggle="pill"
+                  href="#kanban-board"
+                  role="tab"
+                  aria-controls="kanban-board"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/kanban-board.svg"
+                    alt="Kanban Board"
+                  />
+                  <span>Kanban Board</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="report-tab"
+                  data-bs-toggle="pill"
+                  href="#report"
+                  role="tab"
+                  aria-controls="report"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/reports.svg"
+                    alt="Reports"
+                  />
+                  <span>Reports</span>
+                </a>
+              </li>
+              <li class="nav-item m-2" role="presentation">
+                <a
+                  class="nav-link btn btn-outline-primary effect-none text-dark"
+                  id="self-assign-task-tab"
+                  data-bs-toggle="pill"
+                  href="#self-assign-task"
+                  role="tab"
+                  aria-controls="self-assign-task"
+                  aria-selected="false"
+                >
+                  <img
+                    class="me-2"
+                    src="./images/gray_icons/self-assign-task.svg"
+                    alt="Self-Assign"
+                  />
+                  <span>Self-Assign</span>
+                </a>
+              </li>
+            </ul>
+
+            <div
+              class="rounded shadow bg-white p-5 tab-content"
+              id="pills-tabContent"
+            >
+              <div
+                class="rounded shadow bg-white p-5 tab-content"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade text-center"
+                  id="workflow"
+                  role="tabpanel"
+                  aria-labelledby="workflow-tab"
+                >
+                  <h2 class="mb-4">Workflow</h2>
+                  <p class="mb-4">
+                    Automate and optimize task flow for maximum efficiency.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-dashboard.webp"
+                      alt="Workflow"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="kanban-backlog"
+                  role="tabpanel"
+                  aria-labelledby="kanban-backlog-tab"
+                >
+                  <h2 class="mb-4">Kanban Backlog</h2>
+                  <p class="mb-4">
+                    Prioritize and organize tasks efficiently for streamlined
+                    execution.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-backlog.webp"
+                      alt="Kanban Backlog"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="task-groups"
+                  role="tabpanel"
+                  aria-labelledby="task-groups-tab"
+                >
+                  <h2 class="mb-4">Task Groups</h2>
+                  <p class="mb-4">
+                    Organize related tasks efficiently for seamless team
+                    collaboration.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-taskgroup.webp"
+                      alt="Task Groups"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="task"
+                  role="tabpanel"
+                  aria-labelledby="task-tab"
+                >
+                  <h2 class="mb-4">Tasks</h2>
+                  <p class="mb-4">
+                    Assign, track, and complete tasks effortlessly with
+                    automation and collaboration tools.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-task.webp"
+                      alt="Task"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="time-tracking"
+                  role="tabpanel"
+                  aria-labelledby="time-tracking-tab"
+                >
+                  <h2 class="mb-4">Time Tracking</h2>
+                  <p class="mb-4">
+                    Monitor work hours effortlessly for better project planning
+                    and resource allocation.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-time-tracking.webp"
+                      alt="Time Tracking"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade show active text-center"
+                  id="watcher"
+                  role="tabpanel"
+                  aria-labelledby="watcher-tab"
+                >
+                  <h2 class="mb-4">Watchers</h2>
+                  <p class="mb-4">
+                    Stay updated with real-time task notifications and progress
+                    tracking.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-watchers.webp"
+                      alt="Watchers"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="escalations"
+                  role="tabpanel"
+                  aria-labelledby="escalations-tab"
+                >
+                  <h2 class="mb-4">Escalations</h2>
+                  <p class="mb-4">
+                    Ensure swift issue resolution with automated escalation
+                    workflows.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-escalation.webp"
+                      alt="Escalations"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="forms"
+                  role="tabpanel"
+                  aria-labelledby="forms-tab"
+                >
+                  <h2 class="mb-4">Forms</h2>
+                  <p class="mb-4">
+                    Standardize data collection and improve process accuracy
+                    with customizable forms.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-form.webp"
+                      alt="Forms"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="wip-limits"
+                  role="tabpanel"
+                  aria-labelledby="wip-limits-tab"
+                >
+                  <h2 class="mb-4">WIP Limits</h2>
+                  <p class="mb-4">
+                    Prevent overload and enhance efficiency with controlled
+                    work-in-progress limits.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-wip-limit.webp"
+                      alt="WIP Limits"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="kanban-board"
+                  role="tabpanel"
+                  aria-labelledby="kanban-board-tab"
+                >
+                  <h2 class="mb-4">Kanban Board</h2>
+                  <p class="mb-4">
+                    Streamline workflows with flexible, visual task management.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-board.webp"
+                      alt="Kanban Board"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="report"
+                  role="tabpanel"
+                  aria-labelledby="report-tab"
+                >
+                  <h2 class="mb-4">Reports</h2>
+                  <p class="mb-4">
+                    Make data-driven decisions with powerful Reporting &
+                    Analytics.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/kanban-report.webp"
+                      alt="Reports"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade text-center"
+                  id="self-assign-task"
+                  role="tabpanel"
+                  aria-labelledby="self-assign-task-tab"
+                >
+                  <h2 class="mb-4">Self-Assign</h2>
+                  <p class="mb-4">
+                    Enable teams to take initiative and drive work forward
+                    efficiently.
+                  </p>
+                  <div class="image-block screenshot-wide text-center">
+                    <img
+                      src="./images/framework/project-dashboard.webp"
+                      alt="Self-Assign"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section overflow-hidden">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h1>
+                Here's how you can use <br /><span class="blue-gradient-text"
+                  >Vabro </span
+                >for Kanban Projects
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/kanban-board.svg"
+                  alt="Create a Kanban Board"
+                />
+              </div>
+              <h4 class="ms-2">Create a Kanban Board</h4>
+            </div>
+            <div class="accordion accordion-border-bottom" id="kanban_Info">
+              <!-- Accordion Item 1: Visual Workflow -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="kanban-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#kanban-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="kanban-collapse-1"
+                >
+                  Visual Workflow
+                </h2>
+                <div
+                  id="kanban-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="kanban-heading-1"
+                  data-bs-parent="#kanban_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-visualize-work.webp"
+                              alt="Visual Workflow"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                You can create a <b>Kanban board</b> in Vabro
+                                with columns representing each stage of your
+                                workflow (e.g.
+                                <b>Backlog, To Do, In Progress, Review, Done</b
+                                >). Use Vabro's board visualization features to
+                                create clear visual representations of your
+                                workflow.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Card Creation -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="kanban-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#kanban-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="kanban-collapse-2"
+                >
+                  Card Creation
+                </h2>
+                <div
+                  id="kanban-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="kanban-heading-2"
+                  data-bs-parent="#kanban_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-card-creation.webp"
+                              alt="Card Creation"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Use Vabro's task management features to create
+                                <b>cards</b> for each work item, including
+                                descriptions, assignees, due dates, and priority
+                                levels.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/kanban-principle.svg"
+                  alt="Implement Kanban Principles"
+                />
+              </div>
+              <h4 class="ms-2">Implement Kanban Principles</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="kanbanPrinciples_Info"
+            >
+              <!-- Accordion Item 1: Visualize Work -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="kanbanp-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#kanbanp-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="kanbanp-collapse-1"
+                >
+                  Visualize Work
+                </h2>
+                <div
+                  id="kanbanp-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="kanbanp-heading-1"
+                  data-bs-parent="#kanbanPrinciples_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-visualize-work.webp"
+                              alt="Visualize Work"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                The <b>Kanban board</b> in Vabro makes all work
+                                items and their status visible to the entire
+                                team, creating transparency and clarity.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Limit Work in Progress -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="kanbanp-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#kanbanp-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="kanbanp-collapse-2"
+                >
+                  Limit Work in Progress (WIP)
+                </h2>
+                <div
+                  id="kanbanp-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="kanbanp-heading-2"
+                  data-bs-parent="#kanbanPrinciples_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-wip-limit.webp"
+                              alt="Limit Work in Progress"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                You can establish <b>WIP limits</b> for each
+                                column in your Vabro Kanban board, ensuring the
+                                team focuses on completing tasks before starting
+                                new ones.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 3: Manage Flow -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="kanbanp-heading-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#kanbanp-collapse-3"
+                  aria-expanded="false"
+                  aria-controls="kanbanp-collapse-3"
+                >
+                  Manage Flow
+                </h2>
+                <div
+                  id="kanbanp-collapse-3"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="kanbanp-heading-3"
+                  data-bs-parent="#kanbanPrinciples_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-time-tracking.webp"
+                              alt="Manage Flow"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Monitor how work moves through the system and
+                                use Vabro's <b>tracking features</b> to identify
+                                bottlenecks or areas where work gets stuck.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/countinuous-delivery.svg"
+                  alt="Continuous Delivery"
+                />
+              </div>
+              <h4 class="ms-2">Continuous Delivery</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="continuousDelivery_Info"
+            >
+              <!-- Accordion Item 1: Pull System -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="cd-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cd-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="cd-collapse-1"
+                >
+                  Pull System
+                </h2>
+                <div
+                  id="cd-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="cd-heading-1"
+                  data-bs-parent="#continuousDelivery_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-pull-system.webp"
+                              alt="Pull System"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Implement a <b>pull system</b> where team
+                                members pull new work only when their current
+                                tasks are complete, maintaining a steady flow of
+                                work.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Task Prioritization -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="cd-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cd-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="cd-collapse-2"
+                >
+                  Task Prioritization
+                </h2>
+                <div
+                  id="cd-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="cd-heading-2"
+                  data-bs-parent="#continuousDelivery_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-task-prioritization.webp"
+                              alt="Task Prioritization"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Use Vabro's <b>priority features</b> to ensure
+                                that the most important tasks are addressed
+                                first, maintaining alignment with business
+                                goals.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/process-improvement.svg"
+                  alt="Process Improvement"
+                />
+              </div>
+              <h4 class="ms-2">Process Improvement</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="processImprovement_Info"
+            >
+              <!-- Accordion Item 1: Metrics Tracking -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="pi-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#pi-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="pi-collapse-1"
+                >
+                  Metrics Tracking
+                </h2>
+                <div
+                  id="pi-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="pi-heading-1"
+                  data-bs-parent="#processImprovement_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-metrics-tracking.webp"
+                              alt="Metrics Tracking"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Use Vabro's <b>reporting tools</b> to track key
+                                Kanban metrics like <b>cycle time</b> (how long
+                                it takes for a task to move from start to
+                                finish) and <b>throughput</b> (how many tasks
+                                are completed in a given timeframe).
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Feedback Collection -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="pi-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#pi-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="pi-collapse-2"
+                >
+                  Feedback Collection
+                </h2>
+                <div
+                  id="pi-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="pi-heading-2"
+                  data-bs-parent="#processImprovement_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-feedback-collection.webp"
+                              alt="Feedback Collection"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Utilize Vabro's <b>forms</b> and
+                                <b>surveys</b> to gather team feedback on
+                                <b>process improvement</b> opportunities.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/icons/automation.svg"
+                  alt="Managing Workflows and Automation"
+                />
+              </div>
+              <h4 class="ms-2">Managing Workflows and Automation</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="workflowAutomation_Info"
+            >
+              <!-- Accordion Item 1: Workflow Rules -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="wa-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#wa-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="wa-collapse-1"
+                >
+                  Workflow Rules
+                </h2>
+                <div
+                  id="wa-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="wa-heading-1"
+                  data-bs-parent="#workflowAutomation_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-workflow-rules.webp"
+                              alt="Workflow Rules"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Set up automated workflows in Vabro that move
+                                cards between columns based on specific triggers
+                                or conditions.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Notification System -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="wa-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#wa-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="wa-collapse-2"
+                >
+                  Notification System
+                </h2>
+                <div
+                  id="wa-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="wa-heading-2"
+                  data-bs-parent="#workflowAutomation_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-notification-system.webp"
+                              alt="Notification System"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Configure notifications to alert team members
+                                when tasks are assigned to them or when tasks
+                                are approaching deadlines.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/reports-and-metrics.svg"
+                  alt="Managing Workflows and Automation"
+                />
+              </div>
+              <h4 class="ms-2">Reporting and Analysis</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="reportingAnalysis_Info"
+            >
+              <!-- Accordion Item 1: Performance Dashboards -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="ra-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ra-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="ra-collapse-1"
+                >
+                  Performance Dashboards
+                </h2>
+                <div
+                  id="ra-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="ra-heading-1"
+                  data-bs-parent="#reportingAnalysis_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-report.webp"
+                              alt="Performance Dashboards"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Create customized dashboards in Vabro to
+                                visualize and track team performance, workflow
+                                efficiency, and project progress.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Bottleneck Identification -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="ra-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#ra-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="ra-collapse-2"
+                >
+                  Bottleneck Identification
+                </h2>
+                <div
+                  id="ra-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="ra-heading-2"
+                  data-bs-parent="#reportingAnalysis_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-bottleneck-identification.webp"
+                              alt="Bottleneck Identification"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Use Vabro's tracking features to identify where
+                                work tends to accumulate, allowing for targeted
+                                process improvements.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-9">
+            <div
+              class="d-flex justify-content-start align-items-center vabro-card p-2"
+            >
+              <div class="tab-head-img">
+                <img
+                  src="./images/gray_icons/collaboration.svg"
+                  alt="Collaboration and Communication"
+                />
+              </div>
+              <h4 class="ms-2">Collaboration and Communication</h4>
+            </div>
+            <div
+              class="accordion accordion-border-bottom"
+              id="collaborationCommunication_Info"
+            >
+              <!-- Accordion Item 1: Card Comments -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 active"
+                  id="cc-heading-1"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cc-collapse-1"
+                  aria-expanded="true"
+                  aria-controls="cc-collapse-1"
+                >
+                  Card Comments
+                </h2>
+                <div
+                  id="cc-collapse-1"
+                  class="accordion-collapse collapse border-0 show"
+                  aria-labelledby="cc-heading-1"
+                  data-bs-parent="#collaborationCommunication_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-card-comments.webp"
+                              alt="Card Comments"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Utilize Vabro's commenting features to
+                                facilitate discussions about specific tasks
+                                directly on the cards.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Item 2: Document Attachment -->
+              <div class="accordion-item border-0 bg-transparent">
+                <h2
+                  class="accordion-header accordion-button h5 border-0 collapsed"
+                  id="cc-heading-2"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#cc-collapse-2"
+                  aria-expanded="false"
+                  aria-controls="cc-collapse-2"
+                >
+                  Document Attachment
+                </h2>
+                <div
+                  id="cc-collapse-2"
+                  class="accordion-collapse collapse border-0"
+                  aria-labelledby="cc-heading-2"
+                  data-bs-parent="#collaborationCommunication_Info"
+                >
+                  <div class="accordion-body py-0 pt-2 content">
+                    <div class="border rounded-lg p-4">
+                      <div class="row align-items-center">
+                        <!-- Image Block -->
+                        <div class="col-md-6">
+                          <div class="image-block screenshot-wide text-center">
+                            <img
+                              loading="lazy"
+                              decoding="async"
+                              src="./images/framework/kanban-document-attachment.webp"
+                              alt="Document Attachment"
+                            />
+                          </div>
+                        </div>
+                        <!-- Text Block -->
+                        <div class="col-md-6 pt-3 pt-md-0">
+                          <div class="content-block">
+                            <div class="content">
+                              <p>
+                                Attach relevant files, specifications, or
+                                requirements to cards for easy reference.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section overflow-hidden">
+      <div class="thinkvabro-section">
+        <div
+          class="thinkvabro-section-content d-flex flex-column justify-content-center align-center"
+        >
+          <h2 class="text-center section-heading">
+            Achieve Your Goals & Simplify Management
+          </h2>
+          <a
+            class="btn font-20 btn-primary rounded-pill mt-5 align-self-center"
+            href="https://app.vabro.com/Home/join"
+            target="_blank"
+            >Try Vabro for Free
+            <img
+              class="img-fluid ms-2"
+              src="./images/icons/right-angle.svg"
+              height="20"
+              alt="Right Angle"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .solutions-tab-view .nav-tabs {
+        max-width: none;
+      }
+
+      .tab-container {
+        padding: 24px;
+        height: auto;
+        border-radius: 24px;
+        border: 1px solid #b8cff0;
+      }
+
+      .tab-head-img {
+        padding: 0.4rem;
+        border-radius: 50px;
+        border: 1px solid #b8cff0;
+        background: #eff6ff;
+        align-self: flex-start;
+      }
+
+      .tab-head-img img {
+        height: 2.2rem;
+        width: 2.2rem;
+        filter: brightness(0) saturate(100%) invert(17%) sepia(89%)
+          saturate(4561%) hue-rotate(221deg) brightness(104%) contrast(85%);
+      }
+    </style>
+
+    <!-- # JS Plugins -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
