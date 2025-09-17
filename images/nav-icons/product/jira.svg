@@ -1,0 +1,17 @@
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="devicon:jira">
+<path id="Vector" d="M20.5663 3H11.9004C11.9004 5.16 13.6486 6.909 15.8092 6.909H17.403V8.45138C17.403 10.6114 19.152 12.3604 21.312 12.3604V3.74569C21.3118 3.54796 21.2332 3.35838 21.0934 3.21857C20.9536 3.07876 20.764 3.00015 20.5663 3Z" fill="#2684FF"/>
+<path id="Vector_2" d="M16.2725 7.32001H7.60645C7.60645 9.47982 9.35488 11.2288 11.5147 11.2288H13.1092V12.7712C13.1092 14.9312 14.8582 16.6802 17.0182 16.6802V8.06551C17.0179 7.86783 16.9392 7.67834 16.7995 7.53856C16.6597 7.39878 16.4702 7.32031 16.2725 7.32001Z" fill="url(#paint0_linear_4650_3136)"/>
+<path id="Vector_3" d="M11.9786 11.6396H3.3125C3.3125 13.8004 5.06075 15.5486 7.2215 15.5486H8.81525V17.0918C8.81525 19.2518 10.5642 21 12.7241 21V12.3861C12.7239 12.1884 12.6453 11.9988 12.5055 11.8589C12.3658 11.719 12.1763 11.64 11.9786 11.6396Z" fill="url(#paint1_linear_4650_3136)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_4650_3136" x1="16.8378" y1="7.32976" x2="13.1508" y2="11.1315" gradientUnits="userSpaceOnUse">
+<stop offset="0.176" stop-color="#0052CC"/>
+<stop offset="1" stop-color="#2684FF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_4650_3136" x1="12.7932" y1="11.673" x2="8.53025" y2="15.8205" gradientUnits="userSpaceOnUse">
+<stop offset="0.176" stop-color="#0052CC"/>
+<stop offset="1" stop-color="#2684FF"/>
+</linearGradient>
+</defs>
+</svg>

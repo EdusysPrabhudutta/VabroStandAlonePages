@@ -1,0 +1,25 @@
+<svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 9534">
+<g id="Rectangle 3552">
+<mask id="path-1-inside-1_6869_31633" fill="white">
+<rect width="9.33948" height="4.70588" rx="0.761905"/>
+</mask>
+<rect width="9.33948" height="4.70588" rx="0.761905" stroke="#68696E" stroke-width="2.28571" mask="url(#path-1-inside-1_6869_31633)"/>
+</g>
+<g id="Rectangle 3553">
+<mask id="path-2-inside-2_6869_31633" fill="white">
+<rect x="3.73633" y="5.64722" width="9.33948" height="4.70588" rx="0.761905"/>
+</mask>
+<rect x="3.73633" y="5.64722" width="9.33948" height="4.70588" rx="0.761905" stroke="#68696E" stroke-width="2.28571" mask="url(#path-2-inside-2_6869_31633)"/>
+</g>
+<g id="Rectangle 3554">
+<mask id="path-3-inside-3_6869_31633" fill="white">
+<rect y="11.2942" width="9.33948" height="4.70588" rx="0.761905"/>
+</mask>
+<rect y="11.2942" width="9.33948" height="4.70588" rx="0.761905" stroke="#68696E" stroke-width="2.28571" mask="url(#path-3-inside-3_6869_31633)"/>
+</g>
+<path id="Vector 5" d="M1.86719 13.1765H7.47087" stroke="#68696E" stroke-width="0.380952" stroke-linecap="round"/>
+<path id="Vector 2" d="M1.86719 1.88232H7.47087" stroke="#68696E" stroke-width="0.761905" stroke-linecap="round"/>
+<path id="Vector 6" d="M9.80664 13.2659C9.59625 13.2659 9.42569 13.4365 9.42569 13.6469C9.42569 13.8573 9.59625 14.0279 9.80664 14.0279V13.2659ZM14.4764 13.6469V14.0279H14.8573V13.6469H14.4764ZM14.4764 2.35278H14.8573V1.97183H14.4764V2.35278ZM9.80664 2.35278L13.6162 4.55221V0.153353L9.80664 2.35278ZM9.80664 14.0279H14.4764V13.2659H9.80664V14.0279ZM14.8573 13.6469V2.35278H14.0954V13.6469H14.8573ZM14.4764 1.97183H13.2352V2.73374H14.4764V1.97183Z" fill="#68696E"/>
+</g>
+</svg>
