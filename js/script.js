@@ -29,6 +29,9 @@ $(window).on("load", function () {
             $(this).addClass("active").removeClass("collapsed");
           }
         } else {
+          if ($(this).closest(".faq-section").length != 0) {
+            return;
+          }
           if ($(this).hasClass("active")) {
             $(this).addClass("collapsed").removeClass("active");
           }
