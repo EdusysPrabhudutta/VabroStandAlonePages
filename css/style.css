@@ -4366,7 +4366,7 @@ fieldset:disabled .btn {
   align-items: center;
   width: 100%;
   padding: 1rem 1.25rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #fff;
   text-align: left;
   background-color: #fff;
@@ -11190,9 +11190,12 @@ textarea.form-control {
 
     .svg-white {
         filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+        width: 35px;
     }
     .ai-powered-template-card-container .ai-powered-template-card>div div:first-child {
         background: linear-gradient(90deg,#6e45e2 26.85%,#3477db 100%);
+        width: 50px;
+        min-width: 50px;
     }
     .ai-powered-template-card-container .ai-powered-template-card>div {
         border-radius: 12px;
