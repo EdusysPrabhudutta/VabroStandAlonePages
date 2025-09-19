@@ -11169,3 +11169,33 @@ textarea.form-control {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%)
     hue-rotate(214deg) brightness(104%) contrast(98%);
 }
+
+
+/* Newly Added */
+/* Comparison */
+.accord-header-img {
+      padding: 0.5rem;
+      border-radius: 10px;
+      border: 1px solid #b8cff0;
+      background: #eff6ff;
+      align-self: flex-start;
+    }
+    .vabro-vs-others-table td {
+        text-align: start;
+    }
+
+    .vabro-vs-others-table tr th {
+        text-align: start;
+    }
+
+    .svg-white {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) hue-rotate(0deg);
+    }
+    .ai-powered-template-card-container .ai-powered-template-card>div div:first-child {
+        background: linear-gradient(90deg,#6e45e2 26.85%,#3477db 100%);
+    }
+    .ai-powered-template-card-container .ai-powered-template-card>div {
+        border-radius: 12px;
+        border: 1px solid #6e45e2;
+        height: 100%;
+    }
