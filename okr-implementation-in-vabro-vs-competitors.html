@@ -1,0 +1,634 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKR implementation in Vabro vs Competitors</title>
+    <meta name="description"
+        content="Bridge the gap between development and operations with Vabro DevOps enhance collaboration, automate workflows, and accelerate delivery." />
+    <meta name="keywords" content="OKR, CI/CD, Automation, Software Development, IT Operations" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- # Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- # Main Style Sheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <header class="navigation bg-tertiary">
+        <nav class="navbar navbar-expand-xl navbar-light py-3">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" decoding="async" class="img-fluid" height="45"
+                        src="./images/logo/logo_vabro_make_work_fun.svg" alt="Vabro Logo" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="banner bg-tertiary position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="text-center text-lg-start pe-0 pe-xl-5">
+                        <h5 class="text-uppercase text-primary mb-4">Frameworks</h5>
+
+                        <h1 class="text-capitalize mb-4">
+                            Vabro- <span class="blue-gradient-text">AI-Driven OKR Execution</span>
+                        </h1>
+                        <p>
+                            Vabro treats OKRs as a core capability, not an add-on. Teams can set Objectives, define Key
+                            Results, and break them down into actionable tasks directly inside the platform. Every task,
+                            project, and sprint can be linked to OKRs, ensuring measurable alignment between day-to-day
+                            work and strategic business goals.
+
+                            The game-changer is Vabro Genie AI, which helps teams auto-generate OKRs from strategy
+                            documents, suggest measurable key results, and continuously track progress. It also provides
+                            real-time analytics to show whether objectives are on track, at risk, or need adjustment.
+                            With built-in collaboration tools, dashboards, and reminders, Vabro makes OKRs living and
+                            dynamic, rather than static reports.
+                        </p>
+
+                        <div
+                            class="d-flex gap-4 mt-4 align-items-center justify-content-center justify-content-lg-start">
+                            <div>
+                                <a class="btn btn-primary rounded-pill" href="https://app.vabro.com/Home/join"
+                                    target="_blank">Try Vabro for Free</a>
+                            </div>
+                            <p class="mb-0">Tailored for teams of all sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5 text-center">
+                        <img class="img-fluid"
+                            src="./images/product_page/okr-implementation-in-vabro-vs-competitors-hero.png"
+                            alt="Frameworks">
+                    </div>
+                    <div class="product-blur"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="faq-section section-padding-block">
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button active " id="headingOne" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-jira.svg" alt="Jira">
+                        <span class="ms-3">
+                            Jira – Project-Centric, Not Goal-Centric
+                        </span>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                            Jira is strong in Agile project execution but doesn’t natively support OKRs. Organizations
+                            often rely on third-party apps from the Atlassian Marketplace to track OKRs, which adds
+                            extra cost and complexity. Linking goals to tasks is possible but feels disconnected, as
+                            Jira focuses primarily on issues and sprints. Without heavy customization, goal alignment
+                            remains fragmented.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingTwo" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-monday.svg" alt="Why Vabro">
+                        <span class="ms-3">
+                            Monday – OKRs as Dashboards
+                        </span>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            Monday.com offers templates for OKR tracking and allows teams to build dashboards that
+                            monitor objectives. However, OKRs are handled like custom projects, not as a deeply
+                            integrated system. While its visual boards make it easy to track progress at a glance,
+                            Monday lacks native AI-driven insights or automation for continuous OKR improvement. Scaling
+                            OKRs across multiple teams requires extra setup.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingThree" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-clickup.svg" alt="Why Vabro">
+                        <span class="ms-3">
+                            ClickUp – Strong Customization, Weak Structure
+                        </span>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            ClickUp provides flexibility with Goals and Targets, which can mimic OKRs. Users can create
+                            objectives, track progress with tasks, and visualize performance. However, OKRs in ClickUp
+                            are loosely structured-requiring manual input and configuration. While ClickUp promotes
+                            itself as “all-in-one,” its OKR features are not as mature, often leading to inconsistency
+                            across teams.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingFour" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-asana-and-others.svg"
+                            alt="Why Vabro">
+                        <span class="ms-3">
+                            Other Tools – Surface-Level OKR Tracking
+                        </span>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            Many other tools offer OKR templates or spreadsheets within their systems, but they lack
+                            deep integration with tasks and team workflows. Without automation or alignment features,
+                            OKRs often end up being tracked in silos-separate from real execution.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+                <h2 class="text-center">Why Vabro is the <span class="blue-gradient-text">Best for OKRs </span> </h2>
+            </div>
+
+            <div class="workflow-150-templates-block mt-5">
+                <div class="row ai-powered-template-card-container">
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-1.svg" class="svg-white"
+                                    alt="Pre Defined Boards Columns" height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Integrated OKR Framework</h4>
+                                <p class="m-0">OKRs are natively built into projects, sprints, and tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-2.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>AI Support</h4>
+                                <p class="m-0">Automatically suggests, monitors, and optimizes OKRs in real time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-3.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Strategic Alignment</h4>
+                                <p class="m-0">Every piece of work is connected to measurable business outcomes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-4.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Collaboration Inside the Tool</h4>
+                                <p class="m-0">Teams discuss, adjust, and track OKRs without leaving the platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-5.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>No Add-Ons Needed</h4>
+                                <p class="m-0">Unlike Jira or others, everything is included in one plan.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/okr-feature-6.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Ease + Scale</h4>
+                                <p class="m-0">Works for startups, SMBs, and large enterprises alike.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section-padding-block">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Workflow Management Tools : <span class="blue-gradient-text">Why
+                        Vabro.ai Leads the Pack </span></h2>
+                <p class="fw-500 font-16 text-center centerred-text my-3">with Vabro standing out with perfect 5-star
+                    ratings across all categories:</p>
+            </div>
+
+            <div class="table-responsive vabro-vs-others-table border rounded-3 w-100 mt-5">
+                <table class="table m-0 text-dark">
+                    <thead>
+                        <tr>
+                            <th class="font-16 fw-600">OKR Aspect</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-vabro.svg" alt="Why Vabro">Vabro.ai</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-jira.svg" alt="Why Vabro">Jira</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-monday.svg" alt="Why Vabro">Monday.com</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-clickup.svg" alt="Why Vabro">ClickUp</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-asana-and-others.svg" alt="Why Vabro">Others
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- Objective Setting -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Objective Setting</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI assists in drafting clear, measurable objectives aligned with company vision.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>No native OKR framework; requires plugins.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Supports goals but lacks structured OKR depth.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Possible through customization but not native.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Rarely supports structured objectives.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Key Results Tracking -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Key Results Tracking</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI tracks progress automatically, updating key results in real‑time from task data.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Limited tracking, mostly manual updates.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Key results can be monitored but not AI‑driven.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Requires workarounds or integrations.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Very limited tracking capabilities.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Alignment Across Teams -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Alignment Across Teams</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>OKRs cascade seamlessly across departments with AI suggestions for alignment.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Weak alignment features, siloed per project.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Allows team‑level goals but limited cross‑team linkage.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Alignment possible but not automatic.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>No structured alignment support.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Progress Visualization -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Progress Visualization</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Dynamic dashboards with predictive analytics and AI‑driven performance insights.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Basic charts, not predictive.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Offers dashboards but lacks depth.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Some visualization but no intelligent insights.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Little to no visualization.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Review & Feedback -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Review & Feedback</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI generates automated OKR progress reports and improvement suggestions.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Manual reporting required.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Reviews possible but fully manual.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Needs extra setup for reviews.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Weak or missing feedback loops.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Scalability of OKRs -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Scalability of OKRs</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI adapts OKRs effortlessly from small teams to enterprise‑level organizations.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Difficult to scale across departments.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Works for small to mid teams, struggles at scale.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Limited scalability for large orgs.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Not scalable.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Overall OKR Implementation -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Overall OKR Implementation</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Complete, AI‑powered OKR framework ensuring alignment, tracking, and insights.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Minimal OKR features, mostly add‑on dependent.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Basic goal management, lacks true OKR depth.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Customization required, not native.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Fragmented and incomplete.</div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- # JS Plugins -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
