@@ -1,0 +1,680 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban implementation in Vabro vs Competitors</title>
+    <meta name="description"
+        content="Bridge the gap between development and operations with Vabro DevOps enhance collaboration, automate workflows, and accelerate delivery." />
+    <meta name="keywords" content="Kanban, CI/CD, Automation, Software Development, IT Operations" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
+    <!-- # Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- # Main Style Sheet -->
+    <link href="./css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- navigation -->
+    <header class="navigation bg-tertiary">
+        <nav class="navbar navbar-expand-xl navbar-light py-3">
+            <div class="container">
+                <!-- Brand Logo -->
+                <a class="navbar-brand" href="#">
+                    <img loading="lazy" decoding="async" class="img-fluid" height="45"
+                        src="./images/logo/logo_vabro_make_work_fun.svg" alt="Vabro Logo" />
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="banner bg-tertiary position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="text-center text-lg-start pe-0 pe-xl-5">
+                        <h5 class="text-uppercase text-primary mb-4">Frameworks</h5>
+
+                        <h1 class="text-capitalize mb-4">
+                            Vabro- <span class="blue-gradient-text">Intelligent, Scalable Kanban</span>
+                        </h1>
+                        <p>
+                            Vabro offers dynamic Kanban boards designed for both simplicity and enterprise use. Its
+                            boards adapt automatically with the help of Genie AI, which assists in task prioritization,
+                            backlog refinement, and workflow automation. Teams can set rules so tasks move automatically
+                            when conditions are met, eliminating manual effort.
+
+                            Vabro’s Kanban isn’t just visual-it integrates with OKRs, Scrum, DevOps pipelines, and
+                            HR/marketing workflows. Teams can pick from 1,500+ ready-to-use templates, clone existing
+                            boards, or build custom workflows from scratch. With built-in chat, file-sharing, watchers,
+                            and notifications, collaboration happens right inside the board. Real-time analytics,
+                            burndown charts, and predictive dashboards give leaders visibility into bottlenecks and
+                            velocity.
+                        </p>
+
+                        <div
+                            class="d-flex gap-4 mt-4 align-items-center justify-content-center justify-content-lg-start">
+                            <div>
+                                <a class="btn btn-primary rounded-pill" href="https://app.vabro.com/Home/join"
+                                    target="_blank">Try Vabro for Free</a>
+                            </div>
+                            <p class="mb-0">Tailored for teams of all sizes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-lg-5 text-center">
+                        <img class="img-fluid"
+                            src="./images/product_page/kanban-implementation-in-vabro-vs-competitors-hero.png"
+                            alt="Frameworks">
+                    </div>
+                    <div class="product-blur"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="faq-section section-padding-block">
+            <div class="accordion mt-5" id="accordionExample">
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button active " id="headingOne" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-jira.svg" alt="Jira">
+                        <span class="ms-3">
+                            Jira – Powerful but Overwhelming
+                        </span>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                            Jira provides strong Kanban capabilities with customizable boards, backlog management, and
+                            reporting. However, it is often seen as too complex-setup requires multiple configurations
+                            and sometimes add-ons. While it supports automation rules, they are manual to configure and
+                            can be overwhelming for new teams. AI is limited, and scaling requires additional modules.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingTwo" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-monday.svg" alt="Why Vabro">
+                        <span class="ms-3">
+                            Monday – Visual and User-Friendly
+                        </span>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            Monday.com shines in visual task tracking. Its Kanban boards are colorful and easy to
+                            customize, making them great for non-technical teams. However, Kanban in Monday is more
+                            cosmetic than functional-it lacks deep Agile features like backlog grooming, velocity
+                            tracking, or predictive analytics. Automation is rule-based, not AI-driven, so advanced
+                            optimization is missing.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingThree" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-clickup.svg" alt="Why Vabro">
+                        <span class="ms-3">
+                            ClickUp – Flexible but Not Specialized
+                        </span>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div class="accordion-body">
+                            ClickUp offers Kanban views as part of its wide set of layouts (list, calendar, timeline,
+                            etc.). It allows for some Agile customization, but its Kanban boards are general-purpose and
+                            don’t go deep into backlog refinement, sprint metrics, or predictive insights. Teams often
+                            spend time configuring workflows rather than benefiting from ready-to-use Agile structures.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border mb-2 rounded-sm">
+                    <h2 class="accordion-header accordion-button collapsed" id="headingFour" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                        <img class="accord-header-img" src="./images/compariosn/competitor-asana-and-others.svg"
+                            alt="Why Vabro">
+                        <span class="ms-3">
+                            Other Tools – Basic and Fragmented
+                        </span>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            Other tools (like Trello or Asana) provide basic Kanban boards that work well for small
+                            teams or simple task tracking. However, they fall short for scaling Agile across
+                            departments, integrating with OKRs, or providing advanced analytics. Most require
+                            third-party power-ups or integrations, adding cost and complexity.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+                <h2 class="text-center">Why Vabro is the <span class="blue-gradient-text">Best for Kanban </span> </h2>
+            </div>
+
+            <div class="workflow-150-templates-block mt-5">
+                <div class="row ai-powered-template-card-container">
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-1.svg" class="svg-white"
+                                    alt="Pre Defined Boards Columns" height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>AI-Powered Boards</h4>
+                                <p class="m-0">Automated prioritization, backlog grooming, and smart triggers built in.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-2.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Pre-Built Templates</h4>
+                                <p class="m-0">1,500+ Kanban templates for every business function.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-3.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Deep Agile Integration</h4>
+                                <p class="m-0">Works seamlessly with Scrum, OKRs, DevOps, HR, marketing, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-4.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Collaboration Inside Boards</h4>
+                                <p class="m-0">Chat, tagging, file-sharing, and watchers reduce tool-hopping.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-5.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Analytics and Forecasting</h4>
+                                <p class="m-0">Real-time dashboards, velocity tracking, and predictive insights.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-6.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>Simple Yet Scalable</h4>
+                                <p class="m-0">Intuitive for startups, powerful enough for enterprises-without Jira’s
+                                    complexity.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ai-powered-template-card mb-3">
+                        <div class="d-flex p-4 align-items-center">
+                            <div class="p-2 border light-blue-border rounded-circle">
+                                <img src="./images/framework/kanban-feature-7.svg" class="svg-white" alt="Sample Tasks"
+                                    height="40">
+                            </div>
+                            <div class="ms-3">
+                                <h4>All Features Included</h4>
+                                <p class="m-0">No extra charges for automation, AI, or templates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="section-padding-block">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-center">Workflow Management Tools : <span class="blue-gradient-text">Why
+                        Vabro.ai Leads the Pack </span></h2>
+                <p class="fw-500 font-16 text-center centerred-text my-3">with Vabro standing out with perfect 5-star
+                    ratings across all categories:</p>
+            </div>
+
+            <div class="table-responsive vabro-vs-others-table border rounded-3 w-100 mt-5">
+                <table class="table m-0 text-dark">
+                    <thead>
+                        <tr>
+                            <th class="font-16 fw-600">Kanban Capability</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-vabro.svg" alt="Why Vabro">Vabro.ai</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-jira.svg" alt="Why Vabro">Jira</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-monday.svg" alt="Why Vabro">Monday.com</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-clickup.svg" alt="Why Vabro">ClickUp</th>
+                            <th class="font-16 fw-600"><img class="accord-header-img me-2"
+                                    src="./images/compariosn/competitor-asana-and-others.svg" alt="Why Vabro">Others
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <!-- Board Design & Usability -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Board Design &amp; Usability</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI-powered, dynamic boards that adapt to workflows across HR, IT, Sales, and
+                                    Marketing.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Flexible boards but require manual setup.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Simple and visual boards, limited complexity.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Versatile but can feel cluttered.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Basic board features, not enterprise-ready.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Workflow Automation -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Workflow Automation</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI automates task movement, WIP limits, and backlog grooming without manual effort.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Rules-based automations, no predictive AI.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Basic automation, limited to reminders and updates.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Good automations but mostly manual rules.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Minimal automation.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Task Prioritization -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Task Prioritization</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI suggests task priorities, predicts bottlenecks, and optimizes flow.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Manual prioritization required.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Tasks can be ordered but no smart prioritization.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Customizable, but no predictive support.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Weak or missing prioritization features.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Cross-Team Visibility -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Cross‑Team Visibility</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Unified Kanban across departments with AI‑driven progress syncing.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Good for dev teams, weak for cross‑department collaboration.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Designed mainly for small teams and creative projects.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Works across teams but requires setup.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Lacks seamless cross‑team alignment.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Analytics & Reporting -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Analytics &amp; Reporting</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Predictive insights, flow efficiency, lead time, and throughput built‑in.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Standard reports, advanced ones need add‑ons.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Limited reporting with static dashboards.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Reports available but not predictive.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Basic reporting only.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Scalability of Kanban -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Scalability of Kanban</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>AI auto‑scales workflows for startups to enterprises without extra setup.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Scales well but becomes complex and costly.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Suitable for SMBs, not for enterprise.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Scales moderately, complexity grows quickly.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Not scalable.</div>
+                            </td>
+                        </tr>
+
+                        <!-- Overall Kanban Implementation -->
+                        <tr>
+                            <th class="font-16 fw-600" scope="row">Overall Kanban Implementation</th>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20">
+                                </div>
+                                <div>Complete, AI‑driven Kanban solution with automation, insights, and adaptability.
+                                </div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Strong Kanban but heavily manual.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20">
+                                </div>
+                                <div>Easy boards but lacks enterprise strength.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20"><img src="./images/testimonial/star-fill.svg" class="h2"
+                                        alt="Filled star" heithg="20"><img src="./images/testimonial/star-fill.svg"
+                                        class="h2" alt="Filled star" heithg="20"><img
+                                        src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Versatile but not predictive.</div>
+                            </td>
+                            <td>
+                                <div class="ragings">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                    <img src="./images/testimonial/star-fill.svg" class="h2" alt="Filled star"
+                                        heithg="20">
+                                </div>
+                                <div>Limited and fragmented.</div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- # JS Plugins -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/bootstrap/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
